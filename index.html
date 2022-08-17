@@ -21,18 +21,19 @@
 		var header = document.querySelector('header');
 		var section = document.querySelector('section');
 		/* STEP 3: Store the URL of a JSON file in a variable */
-		var requestURL = 'https://smccrindle.github.io/comp1073-10/js/i-scream.json';
+	//	var requestURL = 'https://github.com/yeung60142/comp1073-m2022-lab10/blob/master/js/i-scream.json';
 		/* STEP 4: Create a new XHR object */
-		var request = new XMLHttpRequest();
+	//	var request = new XMLHttpRequest();
 		/* STEP 5: Open a new request using the request() method */
-		request.open('GET', requestURL);
+	//	request.open('GET', requestURL);
 		/* STEP 6: Set JavaScript to accept JSON from the server */
-		request.responseType = 'json';
+	//	request.responseType = 'json';
 		/* STEP 7: Send the request with the send() method */
-		request.send();
+	//	request.send();
 		/* STEP 8: Add an event handler that listens for the onload event of the JSON file/object */
 		request.onload = function() {
-			var iScreamInc = request.response;
+			//var iScreamInc = request.response;
+			const iScreamInc = require('js/i-scream.json');
 			console.log(iScreamInc);
 			populateHeader(iScreamInc);
 			topFlavors(iScreamInc);
@@ -62,7 +63,7 @@
 				var p2 = document.createElement('p');
 				var list = document.createElement('ul');
 				// STEP 10e: Set the textContent property for each of the above elements (except the UL), based on the JSON content
-				img.setAttribute('src', 'https://smccrindle.github.io/comp1073-10/images/' + topFlavors[i].image);
+				img.setAttribute('src', 'images/' + topFlavors[i].image);
 				img.setAttribute('alt', topFlavors[i].name);
 				h2.textContent = topFlavors[i].name;
 				p1.textContent = 'Calories: ' + topFlavors[i].calories;
