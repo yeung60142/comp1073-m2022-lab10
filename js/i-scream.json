@@ -27,6 +27,17 @@
       "image": "peach-mango.svg"
     },
     {
+      "name": "Happy birthday tea",
+      "calories": 299,
+      "type": "ice cream",
+      "ingredients": [
+        "mix of hppay birthday",
+        "green tea",
+        "candy sprinkles"
+      ],
+      "image": "ice-cream-xtra1.svg"
+    },
+    {
       "name": "Stupendous Strawberry",
       "calories": 425,
       "type": "frozen yogurt",
@@ -36,6 +47,17 @@
         "candy sprinkles"
       ],
       "image": "strawberry-sprinkle.svg"
+    },
+    {
+      "name": "Bubble Bubble",
+      "calories": 786
+      "type": "frozen yogurt",
+      "ingredients": [
+        "peal",
+        "Taiwan milk tea",
+        "milk sprinkles"
+      ],
+      "image": "ice-cream-xtra2.svg"
     }
   ]
 }
